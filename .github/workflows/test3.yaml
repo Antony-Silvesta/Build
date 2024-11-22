@@ -25,7 +25,7 @@ jobs:
 
       - name: Get Latest Release Information
         run: |
-          $repo = "JebaShinba/Build"  # Replace with your repository
+          $repo = "Antony-Silvesta/Build"  # Replace with your repository
           $token = "${{ secrets.GITHUB_TOKEN }}"  # Using GitHub token for authentication
           $headers = @{
             Authorization = "token $token"
