@@ -14,8 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Run shell script
+    - name: Run bash script
       run: |
-        
-        bash ./test.sh
-      
+        # Use Git Bash to execute the bash script
+        C:/Program\ Files/Git/usr/bin/bash.exe C:/Users/shinba/build/test.sh
