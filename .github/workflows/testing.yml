@@ -1,4 +1,4 @@
-name: Download Release
+name: Detect OS on Windows Self-Hosted Runner
 
 on:
   push:
@@ -7,14 +7,12 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  download-release:
-    runs-on: [self-hosted, windows]  # Use 'self-hosted' and 'windows' for Windows-based self-hosted runners.
+  detect-os-windows:
+    runs-on: [self-hosted, windows]  # Ensure the runner is Windows-based
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Run bash script
-      run: |
-        # Use Git Bash to execute the bash script
-        C:/Program\ Files/Git/usr/bin/bash.exe C:/Users/shinba/build/test.sh
+      - name: Run OS Detection Script
+        run: ./demo.sh
