@@ -1,0 +1,21 @@
+name: Download Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  download-release:
+    runs-on: [self-hosted, windows]  # Use 'self-hosted' and 'windows' for Windows-based self-hosted runners.
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run shell script
+      run: |
+        chmod +x ./test.sh
+        bash ./test.sh
+      
