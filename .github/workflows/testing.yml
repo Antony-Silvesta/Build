@@ -14,5 +14,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set PowerShell Execution Policy for Current Session
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
       - name: Run OS Detection Script
         run: ./demo.sh
