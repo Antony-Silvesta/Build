@@ -1,0 +1,20 @@
+name: Download Release on Windows
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  download-release:
+    runs-on: [self-hosted, windows]  # Specify the self-hosted Windows runner
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run PowerShell script to download release
+      run: |
+        powershell -ExecutionPolicy ByPass -File ./release.sh
+

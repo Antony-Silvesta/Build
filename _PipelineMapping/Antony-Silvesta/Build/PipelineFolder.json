@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Antony-Silvesta/Build",
+  "pipelineDirectory": "Build",
+  "workspaceDirectory": "Build\\Build",
+  "repositories": {
+    "Antony-Silvesta/Build": {
+      "repositoryPath": "Build\\Build",
+      "lastRunOn": "11/22/2024 15:36:37 +05:30"
+    }
+  },
+  "lastRunOn": "11/22/2024 16:44:56 +05:30"
+}
