@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Repository details
-REPO_OWNER="JebaShinba"
+REPO_OWNER="Antony-Silvesta"
 REPO_NAME="Build"
 TOKEN=""      # Optional: Add your GitHub token if accessing private repositories
 DOWNLOAD_DIR="$HOME/Build"  # Use Unix-style path (e.g., /home/username/Build)
